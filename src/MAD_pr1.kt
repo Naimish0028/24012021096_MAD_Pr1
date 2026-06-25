@@ -1,14 +1,19 @@
 import com.sun.jdi.LongValue
 
 fun main() {
-val i = 30000
-    val j = i.toDouble()
-    val s1 = "30500"
-    val k = s1.toInt()
-    val n = "40000000"
-    val o = n.toInt()
-    println("i = $i, j = $j")
-    println("s1 = $s1 + k = $k")
-    println("n = $n + o = $o")
+    var i = 200
+    var j : Int = 100
+    var k : String = "Naimish"
+    var F : Float = 2.8f
+    var C : Char = 'N'
+    var D : Double = 2.8
+    var b : Boolean= false
+    var long : Long = 1000000
+    var byte : Byte = 1
+    val Z = 20000
+        println("i = "+i)
+    println("j = "+j)
+    println("k =" + k)
+    println("Z =" +Z)
+    System.err.println("Naimish!")
 }
-
