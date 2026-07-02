@@ -8,7 +8,7 @@ fun main(){
     var studentuniname: String
     var studentage : Int
 
-    println("Enter enrollment no: ")
+    println("Enter Enrollment no: ")
     studentenrollmentNo = readln().toInt()
 
     println("Enter student name: ")
