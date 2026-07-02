@@ -20,7 +20,7 @@ fun main(){
     println("Enter student class: ")
     studentclass = readLine().toString()
 
-    println("student batch: ")
+    println("Student batch: ")
     studentbatch = readLine().toString()
 
     println("student clg name: ")
