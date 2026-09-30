@@ -1,3 +1,4 @@
+//Scan student’s information and display all the data:
 fun main(){
     var studentenrollmentNo : Int
     var studentname : String
@@ -41,7 +42,5 @@ fun main(){
     println(studentclgnm)
     println(studentuniname)
     println(studentage)
-
-
 
 }

@@ -1,12 +1,13 @@
+//Find Maximum Number from ArrayList:
 fun main() {
 
-    val a = IntArray(5)
+    val a = ArrayList<Int>()
 
-    println("Enter the numbers:")
+    println("Enter 5 numbers:")
 
-    for (i in 0 until a.size) {
+    for (i in 0 until 5) {
         print("a[$i] = ")
-        a[i] = readLine()!!.toInt()
+        a.add(readln().toInt())
     }
 
     val max = a.maxOrNull()

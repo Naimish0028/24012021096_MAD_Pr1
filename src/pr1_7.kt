@@ -1,3 +1,4 @@
+// Factorial Calculation with Recursion
 fun factorial(n: Int): Int {
 
     if (n == 0 || n == 1)

@@ -1,18 +1,46 @@
-open class Car(var model : String) {
+//Class and Constructor Creation
+class Car(
+    private val type: String,
+    private val model: String,
+    private val price: Double,
+    private val owner: String,
+    private val milesDriven: Double
+) {
 
-    var price: Long = 20000000L
-
-    constructor(p : Long, m : String): this(m){
-        price = p
+    fun getCarInformation() {
+        println("Type: $type")
+        println("Model: $model")
+        println("Owner: $owner")
+        println("Miles Driven: $milesDriven")
     }
 
-}
-class Suzuki(m : String) : Car(m) {
+    fun getOriginalPrice(): Double {
+        return price
+    }
 
+    fun getCurrentPrice(): Double {
+        // Depreciation based on miles driven
+        val depreciation = milesDriven * 0.10
+        return maxOf(0.0, price - depreciation)
+    }
+
+    fun displayCarInformation() {
+        println("\n--- Car Information ---")
+        getCarInformation()
+        println("Original Price: ${getOriginalPrice()}")
+        println("Current Price: ${getCurrentPrice()}")
+    }
 }
-fun main(){
-    var m1 = Suzuki("Access")
-    val a1 = Car( "BMW M5")
-    print("Here is the ${a1.model}")
-    println(" In ${a1.price}")
+
+fun main() {
+
+    val car = Car(
+        type = "SUV",
+        model = "Toyota Fortuner",
+        price = 4000000.0,
+        owner = "Rahul",
+        milesDriven = 50000.0
+    )
+
+    car.displayCarInformation()
 }

@@ -1,3 +1,4 @@
+//Check Odd or Even Numbers:
 fun main(){
     print("Enter the number: ")
     val num = readln().toInt()
